@@ -92,13 +92,6 @@ E-commerce/
 
 ---
 
-## 📊 Dashboards
-
-### Power BI Dashboard
-![Power BI Dashboard](outputs/figures/powerbi_dashboard.png)
-
----
-
 ## 📈 Analysis Screenshots
 
 ### Monthly Revenue Trend & Order Volume
