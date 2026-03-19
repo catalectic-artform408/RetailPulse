@@ -49,10 +49,10 @@ Olist's marketplace serves thousands of sellers and hundreds of thousands of cus
 
 | Metric        | Score  |
 |---------------|--------|
-| ROC-AUC       | 0.63   |
-| Precision     | 0.74   |
-| Recall        | 0.70   |
-| F1-Score      | 0.71   |
+| ROC-AUC       | 0.71   |
+| Precision     | 0.77   |
+| Recall        | 0.74   |
+| F1-Score      | 0.75   |
 
 ## 📁 Project Structure
 
