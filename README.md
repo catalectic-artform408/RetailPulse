@@ -2,8 +2,6 @@
 
 > End-to-end analytics project using 100K+ real orders from the Olist Brazilian marketplace. Covers data engineering, exploratory analysis, ML churn prediction, interactive dashboards, and business storytelling.
 
-![Streamlit AI Customer Dashboard Demo](outputs/figures/streamlit_full_demo.webp)
-
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat-square&logo=python)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-07405e?style=flat-square&logo=sqlite)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-f89939?style=flat-square&logo=scikit-learn)
@@ -80,36 +78,6 @@ E-commerce/
     ├── churn_predictions.csv           # Churn model predictions
     └── business_memo.md                # 1-page business memo
 ```
-
-## 🖥 Dashboard Preview
-
-### Plotly Dash Dashboard (3 pages)
-
-![Dashboard walkthrough showing all 3 pages](outputs/figures/dash_dashboard_demo.webp)
-
-> Launch with: `python dashboard/app.py` → open `http://localhost:8050`
-
-### 🚀 Streamlit App (5 tabs — deployable to Streamlit Cloud)
-
-#### Tab 1: Executive Overview
-![Executive Overview — KPI cards, revenue trend, order status donut](outputs/figures/streamlit_01_executive_overview.png)
-
-#### Tab 2: Customer Intelligence
-![Customer Intelligence — RFM segments, health score distribution, segment filters](outputs/figures/streamlit_02_customer_intelligence.png)
-
-#### Tab 3: Churn & What-If Simulator
-![What-If Simulator — churn reduction slider with revenue recovery projection](outputs/figures/streamlit_03_churn_whatif.png)
-
-#### Tab 4: Customer Lookup
-![Customer Lookup — At-Risk profile with health score, CLV, churn risk breakdown](outputs/figures/streamlit_04_customer_lookup.png)
-
-#### Tab 5: AI Insights
-![AI Insights — auto-generated executive summary and Ask Your Data interface](outputs/figures/streamlit_05_ai_insights.png)
-
-#### 🎬 Full App Walkthrough
-![Streamlit app walkthrough showing all 5 tabs in action](outputs/figures/streamlit_full_demo.webp)
-
-> Launch with: `streamlit run streamlit_app/app.py` → open `http://localhost:8501`
 
 ---
 
@@ -197,19 +165,19 @@ See the full [Business Memo](outputs/business_memo.md) with data-driven findings
 
 ## 🏗 Differentiation Features
 
-| Layer | Feature | Status |
-|-------|---------|--------|
-| Base | EDA + Dashboard + Churn Model | ✅ |
-| Factor 1 | Revenue impact numbers + Business memo | ✅ |
-| Factor 1 | What-if scenario simulator | ✅ |
-| Factor 2 | SHAP explainability | ✅ |
-| Factor 2 | CLV forecast (simple + BG/NBD attempt) | ✅ |
-| Factor 2 | Customer health score (composite 0-100) | ✅ |
-| Factor 3 | Live Streamlit app (deployable) | ✅ |
-| Factor 3 | Customer lookup tool | ✅ |
-| Factor 3 | Auto-refresh simulation | ✅ |
-| Factor 4 | AI-powered insight narrative | ✅ |
-| Factor 4 | Natural language query interface | ✅ |
+| Layer | Feature | 
+|-------|---------|
+| Base | EDA + Dashboard + Churn Model | 
+| Factor 1 | Revenue impact numbers + Business memo | 
+| Factor 1 | What-if scenario simulator | 
+| Factor 2 | SHAP explainability | 
+| Factor 2 | CLV forecast (simple + BG/NBD attempt) | 
+| Factor 2 | Customer health score (composite 0-100) | 
+| Factor 3 | Live Streamlit app (deployable) | 
+| Factor 3 | Customer lookup tool | 
+| Factor 3 | Auto-refresh simulation | 
+| Factor 4 | AI-powered insight narrative | 
+| Factor 4 | Natural language query interface | 
 
 ## 📄 License
 
