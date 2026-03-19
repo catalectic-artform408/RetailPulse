@@ -135,22 +135,13 @@ python notebooks/06_product_analysis.py  # Product analysis
 python notebooks/07_seller_geo.py        # Seller & geo analysis
 python notebooks/08_clv_health_score.py  # CLV forecast + health score
 
-# 5. Launch Streamlit app (recommended)
-streamlit run streamlit_app/app.py
-# Open http://localhost:8501
+
 
 # Or launch Dash dashboard
 python dashboard/app.py
 # Open http://localhost:8050
 ```
 
-## ☁️ Deploy to Streamlit Cloud
-
-1. Push this repository to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Point to `streamlit_app/app.py` as the main file
-4. Add `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` in Secrets for AI features (optional)
-5. Deploy — share the live URL on your resume!
 
 ## 📝 Business Memo
 
@@ -173,7 +164,7 @@ See the full [Business Memo](outputs/business_memo.md) with data-driven findings
 | Factor 2 | SHAP explainability | 
 | Factor 2 | CLV forecast (simple + BG/NBD attempt) | 
 | Factor 2 | Customer health score (composite 0-100) | 
-| Factor 3 | Live Streamlit app (deployable) | 
+| Factor 3 | Interactive Power BI Dashboard | 
 | Factor 3 | Customer lookup tool | 
 | Factor 3 | Auto-refresh simulation | 
 | Factor 4 | AI-powered insight narrative | 
